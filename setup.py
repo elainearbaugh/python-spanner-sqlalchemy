@@ -19,7 +19,7 @@ import setuptools
 
 # Package metadata.
 
-name = "sqlalchemy-spanner"
+name = "sqlalchemy-spanner-affirm-test"
 description = "SQLAlchemy dialect integrated into Cloud Spanner database"
 dependencies = [
     "sqlalchemy>=1.1.13",

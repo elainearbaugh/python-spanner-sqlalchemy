@@ -1755,7 +1755,7 @@ class UserAgentTest(fixtures.TestBase):
         self._metadata = MetaData(bind=self._engine)
 
     def test_user_agent(self):
-        dist = pkg_resources.get_distribution("sqlalchemy-spanner")
+        dist = pkg_resources.get_distribution("sqlalchemy-spanner-affirm-test")
 
         with self._engine.connect() as connection:
             assert (
