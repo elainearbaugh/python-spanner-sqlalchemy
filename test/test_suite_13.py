@@ -1582,7 +1582,7 @@ class UserAgentTest(SpannerSpecificTestBase):
     """Check that SQLAlchemy dialect uses correct user agent."""
 
     def test_user_agent(self):
-        dist = pkg_resources.get_distribution("sqlalchemy-spanner-affirm-test")
+        dist = pkg_resources.get_distribution("sqlalchemy-spanner")
 
         with self._engine.connect() as connection:
             assert (

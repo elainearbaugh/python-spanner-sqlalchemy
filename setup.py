@@ -19,7 +19,7 @@ import setuptools
 
 # Package metadata.
 
-name = "sqlalchemy-spanner-affirm-test"
+name = "sqlalchemy-spanner"
 description = "SQLAlchemy dialect integrated into Cloud Spanner database"
 dependencies = [
     "sqlalchemy>=1.1.13",
@@ -35,11 +35,8 @@ extras = {
 }
 
 BASE_DIR = os.path.dirname(__file__)
-VERSION_FILENAME = os.path.join(BASE_DIR, "version.py")
 PACKAGE_INFO = {}
-with open(VERSION_FILENAME) as f:
-    exec(f.read(), PACKAGE_INFO)
-version = PACKAGE_INFO["__version__"]
+version = '1.2.2+affirm'
 
 package_root = os.path.abspath(os.path.dirname(__file__))
 readme_filename = os.path.join(package_root, "README.rst")

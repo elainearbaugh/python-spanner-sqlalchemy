@@ -577,7 +577,7 @@ class SpannerDialect(DefaultDialect):
             ),
             url.database,
         )
-        dist = pkg_resources.get_distribution("sqlalchemy-spanner-affirm-test")
+        dist = pkg_resources.get_distribution("sqlalchemy-spanner")
         return (
             [match.group("instance"), match.group("database"), match.group("project")],
             {"user_agent": f"gl-{dist.project_name}/{dist.version}"},
